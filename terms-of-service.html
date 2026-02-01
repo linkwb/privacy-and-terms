@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Block Flow</title>
+  <meta name="description" content="Terms of Service for Block Flow (iOS)" />
+
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --card: #11131a;
+      --text: #e9ecf1;
+      --muted: #b4bccb;
+      --line: rgba(255,255,255,.10);
+      --accent: #7aa2ff;
+      --accent2:#67e8f9;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 16px;
+      --max: 920px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f7fb;
+        --card:#ffffff;
+        --text:#111827;
+        --muted:#4b5563;
+        --line: rgba(17,24,39,.10);
+        --shadow: 0 18px 60px rgba(17,24,39,.12);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color:var(--text);
+      background:
+        radial-gradient(1000px 600px at 15% 10%, rgba(122,162,255,.25), transparent 60%),
+        radial-gradient(900px 520px at 85% 20%, rgba(103,232,249,.18), transparent 55%),
+        radial-gradient(900px 560px at 50% 100%, rgba(122,162,255,.12), transparent 60%),
+        var(--bg);
+      line-height:1.6;
+    }
+
+    a{ color:var(--accent2); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    a:focus{ outline: 2px solid var(--accent2); outline-offset: 3px; border-radius: 6px; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+
+    header{
+      margin: 18px 0 14px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+    .logo{
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      box-shadow: 0 10px 30px rgba(103,232,249,.18);
+      flex: 0 0 auto;
+    }
+    .brand h1{
+      font-size: 18px;
+      margin:0;
+      letter-spacing:.2px;
+    }
+    .brand .meta{
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    main{
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .content{
+      padding: 26px 22px;
+    }
+
+    h2{
+      margin: 22px 0 8px;
+      font-size: 16px;
+      letter-spacing:.2px;
+    }
+    p{ margin: 10px 0; color: var(--text); }
+    .muted{ color: var(--muted); }
+
+    ul{
+      margin: 10px 0 10px 20px;
+      padding:0;
+    }
+    li{ margin: 6px 0; }
+
+    .callout{
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(103,232,249,.10), rgba(255,255,255,.02));
+      border-radius: 14px;
+      padding: 14px 14px;
+      margin: 14px 0;
+    }
+
+    footer{
+      margin-top: 14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 18px;
+      border-top: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,0));
+    }
+    .pill{
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .toplinks{
+      margin-top: 12px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      text-decoration:none;
+      font-size: 13px;
+    }
+    .btn:hover{ background: rgba(255,255,255,.06); text-decoration:none; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand" role="banner">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Terms of Service — Block Flow</h1>
+          <p class="meta">Last updated: February 1, 2026</p>
+        </div>
+      </div>
+
+      <nav class="toplinks" aria-label="Policy navigation">
+        <a class="btn" href="./privacy-policy.html" rel="noopener">← View Privacy Policy</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div class="content">
+        <p>
+          These Terms of Service (“Terms”) govern your use of the Block Flow iOS application (“the App”).
+          By downloading or using the App, you agree to these Terms.
+        </p>
+
+        <h2 id="use">1. Use of the App</h2>
+        <p>Block Flow is provided for personal, non-commercial use only. You agree to use the App in compliance with all applicable laws and regulations.</p>
+        <p>You may not:</p>
+        <ul>
+          <li>Use the App for unlawful purposes</li>
+          <li>Attempt to disrupt or interfere with the App’s functionality</li>
+          <li>Reverse engineer, modify, or redistribute the App except as permitted by law</li>
+        </ul>
+
+        <h2 id="ip">2. Intellectual Property</h2>
+        <p>
+          All rights, title, and interest in and to the App, including its content, design, and functionality,
+          are owned by the developer and are protected by applicable intellectual property laws.
+        </p>
+
+        <h2 id="availability">3. Availability</h2>
+        <div class="callout">
+          <p class="muted" style="margin:0;">
+            We strive to keep the App available and functioning properly, but we do not guarantee uninterrupted or error-free operation.
+          </p>
+        </div>
+        <p>
+          The App may be updated, modified, or discontinued at any time without notice.
+        </p>
+
+        <h2 id="thirdparty">4. Third-Party Services</h2>
+        <p>
+          The App may rely on third-party services (such as Google AdMob) to provide certain functionality.
+          We are not responsible for the content, policies, or practices of third-party services.
+        </p>
+        <p>Your use of such services is subject to their respective terms and policies.</p>
+
+        <h2 id="warranties">5. Disclaimer of Warranties</h2>
+        <p>
+          The App is provided “as is” and “as available,” without warranties of any kind, express or implied,
+          including but not limited to implied warranties of merchantability or fitness for a particular purpose.
+        </p>
+
+        <h2 id="liability">6. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental,
+          special, or consequential damages arising out of or related to your use of the App.
+        </p>
+
+        <h2 id="law">7. Governing Law</h2>
+        <p>
+          These Terms shall be governed by and construed in accordance with the laws of the <strong>United States</strong>,
+          without regard to conflict of law principles.
+        </p>
+
+        <h2 id="changes">8. Changes to These Terms</h2>
+        <p>
+          We may update these Terms from time to time. Any changes will be posted on this page with an updated
+          “Last updated” date. Continued use of the App after changes indicates acceptance of the updated Terms.
+        </p>
+
+        <h2 id="contact">9. Contact Information</h2>
+        <p>
+          If you have any questions about these Terms, you may contact us at:
+          <br />
+          <strong>YOUR_CONTACT_EMAIL_HERE</strong>
+        </p>
+      </div>
+
+      <footer>
+        <span class="pill">Block Flow • iOS</span>
+        <span class="pill">Terms of Service</span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
